@@ -1,0 +1,14 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import type { MetaData } from '~/types';
+
+export interface Props {
+  metadata?: MetaData;
+}
+
+const { metadata } = Astro.props;
+---
+
+<PageLayout metadata={metadata}>
+  <slot />
+</PageLayout>
