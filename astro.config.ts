@@ -25,44 +25,58 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: "https://vajpe.com",
-
-  integrations: [tailwind({
-    applyBaseStyles: false,
-  }), sitemap(), mdx(), icon({
-    include: {
-      tabler: ['*'],
-      'flat-color-icons': [
-        'template',
-        'gallery',
-        'approval',
-        'document',
-        'advertising',
-        'currency-exchange',
-        'voice-presentation',
-        'business-contact',
-        'database',
-      ],
+  site: 'https://vajpe.com',
+  redirects: {
+    '/2024/10/18/why-working-with-asyncio-can-be-tricky-in-python/': {
+      status: 302,
+      destination: '/why-working-with-asyncio-can-be-tricky-in-python',
     },
-  }), ...whenExternalScripts(() =>
-    partytown({
-      config: { forward: ['dataLayer.push'] },
-    })
-  ), compress({
-    CSS: true,
-    HTML: {
-      'html-minifier-terser': {
-        removeAttributeQuotes: false,
+  },
+  trailingSlash: 'never',
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap(),
+    mdx(),
+    icon({
+      include: {
+        tabler: ['*'],
+        'flat-color-icons': [
+          'template',
+          'gallery',
+          'approval',
+          'document',
+          'advertising',
+          'currency-exchange',
+          'voice-presentation',
+          'business-contact',
+          'database',
+        ],
       },
-    },
-    Image: false,
-    JavaScript: true,
-    SVG: false,
-    Logger: 1,
-  }), astrowind({
-    config: './src/config.yaml',
-  }), react()],
-
+    }),
+    ...whenExternalScripts(() =>
+      partytown({
+        config: { forward: ['dataLayer.push'] },
+      })
+    ),
+    compress({
+      CSS: true,
+      HTML: {
+        'html-minifier-terser': {
+          removeAttributeQuotes: false,
+        },
+      },
+      Image: false,
+      JavaScript: true,
+      SVG: false,
+      Logger: 1,
+    }),
+    astrowind({
+      config: './src/config.yaml',
+    }),
+    react(),
+  ],
   image: {
     domains: ['cdn.pixabay.com'],
   },
