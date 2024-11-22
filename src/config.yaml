@@ -11,7 +11,7 @@ metadata:
   title:
     default: Vajpe Tech
     template: '%s — Vajpe Tech'
-  description: "We are a new age technology company."
+  description: 'We share tutorials, tips, and tricks to help you become a better developer. We offer freelance services and help you build your dream website. We have industry experience in Financial Technology and Option Trading.'
   robots:
     index: true
     follow: true
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: G-J53KDZDDV6 # or "G-XXXXXXXXXX"
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

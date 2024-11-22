@@ -91,7 +91,7 @@ const getSite = (config: Config) => {
     base: '/',
     trailingSlash: false,
 
-    googleSiteVerificationId: '',
+    googleSiteVerificationId: 'G-J53KDZDDV6',
   };
 
   return merge({}, _default, config?.site ?? {}) as SiteConfig;
