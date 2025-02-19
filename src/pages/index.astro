@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import SectionBlogList from '~/components/homepage/SectionBlogList.astro';
+import Button from '~/components/ui/Button.astro';
 
 const metadata = {
   // title: `Blog${currentPage > 1 ? ` — Page ${currentPage}` : ''}`,
@@ -15,34 +16,35 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      // {
-      //   variant: 'primary',
-      //   text: 'Hire me',
-      //   href: 'mailto:srvajpe@gmail.com',
-      //   target: '_blank',
-      // },
-      // { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/llleaves.svg', alt: 'Leaves Background' }}
-  >
+  <Hero actions={[]} image={{ src: '~/assets/images/llleaves.svg', alt: 'Leaves Background' }}>
     <Fragment slot="title">
-      <!-- Free template for <span class="hidden xl:inline">creating websites with</span> -->
-      <!-- <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS -->
-      <div>Hie, I am Shridhar Vajpe.</div>
+      <div>Build Your Next Software Vertical with Us</div>
     </Fragment>
-    <Fragment slot="subtitle"> A Full Stack Software Developer </Fragment>
-    <Fragment slot="description">
-      I have over 2 years of experience working with algorithmic trading firms. I’ve built trading terminals and custom
-      software to support and enhance trading operations.
-      <div class="text-xl">Contact me for freelance and full time opportunities</div>
-      <div class="py-4">
-        srvajpe at gmail.com
-      </div>
+    <Fragment slot="subtitle">Fast, Reliable, and Scalable Solutions Tailored to Your Needs</Fragment>
+
+    <Fragment slot="content">
+      <Button>Get In Touch</Button>
     </Fragment>
   </Hero>
-  <SectionBlogList />
+
+  <div class="">
+    <h1>What we offer</h1>
+    <div>
+      <h2>Dashboards and Frontend</h2>
+      <div>User-friendly, data-rich interfaces tailored to your needs.</div>
+    </div>
+    <div>
+      <h2>Backend Development</h2>
+      <div>Robust, scalable systems for any business logic.</div>
+    </div>
+
+    <div>
+      <h2>DevOps Excellence</h2>
+      <div>Seamless deployments and efficient infrastructure.</div>
+    </div>
+  </div>
+
+  <!-- <SectionBlogList /> -->
   <!-- Note Widget ******************* -->
 
   <!-- <Note /> -->
