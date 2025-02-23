@@ -1,0 +1,16 @@
+---
+import { twMerge } from 'tailwind-merge';
+type Props = {
+  title: string;
+  body: string;
+  classes?: string;
+};
+const { title, body, classes } = Astro.props;
+---
+
+<Fragment>
+  <div class={twMerge('w-80 bg-muted-theme-blue rounded-lg p-5 space-y-5 min-h-52', classes)}>
+    <div class="text-xl font-semibold">{title}</div>
+    <div class="font-medium text-lg">{body}</div>
+  </div>
+</Fragment>

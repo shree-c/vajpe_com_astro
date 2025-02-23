@@ -110,7 +110,7 @@ export interface Headline {
   subtitle?: string;
   tagline?: string;
   classes?: Record<string, string>;
-  description?: string
+  description?: string;
 }
 
 interface TeamMember {
@@ -188,6 +188,7 @@ export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
   icon?: string;
   classes?: Record<string, string>;
   type?: 'button' | 'submit' | 'reset';
+  themed?: boolean;
 }
 
 export interface ItemGrid {

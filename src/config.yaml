@@ -4,21 +4,19 @@ site:
   base: '/'
   trailingSlash: false
 
-  # googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
-
 # Default SEO metadata
 metadata:
   title:
     default: Vajpe Tech
     template: '%s — Vajpe Tech'
-  description: 'We share tutorials, tips, and tricks to help you become a better developer. We offer freelance services and help you build your dream website. We have industry experience in Financial Technology and Option Trading.'
+  description: 'We are a new age software consultancy firm that specializes in building web and mobile applications.'
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Vajpe Tech
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/banner.png'
         width: 1200
         height: 628
     type: website
@@ -69,4 +67,4 @@ analytics:
       id: G-JLTMS7FHBD # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

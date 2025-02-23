@@ -12,6 +12,8 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
+        'theme-blue': '#0045FF',
+        'muted-theme-blue': 'rgba(48, 53, 255, 0.15)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
