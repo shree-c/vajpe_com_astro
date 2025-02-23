@@ -67,4 +67,4 @@ analytics:
       id: G-JLTMS7FHBD # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light'
