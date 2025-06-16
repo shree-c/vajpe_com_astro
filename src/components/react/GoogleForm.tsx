@@ -1,11 +1,18 @@
-import { Button } from 'primereact/button'
 import { Dialog } from 'primereact/dialog'
 import { ProgressSpinner } from 'primereact/progressspinner'
 import 'primereact/resources/themes/saga-blue/theme.css'
 import { useState } from 'react'
-function GoogleForm() {
+
+function GoogleForm({ title, variant = 'primary' }: { title: string, variant: 'primary' | 'gold' | 'platinum' }) {
   const [displayForm, setDisplayForm] = useState(false)
   const [loading, setLoading] = useState(true)
+
+  const buttonStyles = {
+    primary: 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg',
+    gold: 'bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 shadow-lg',
+    platinum: 'bg-gradient-to-r from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600 shadow-lg'
+  }
+
   return (
     <div className='relative'>
       <Dialog visible={displayForm} onHide={() => setDisplayForm(false)} header='Book Free Consultation' modal pt={{
@@ -22,18 +29,15 @@ function GoogleForm() {
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSejqoyrxOdbkzRNNpGEZmeM8ebF4T67iVJ8nPu_aNZ6nwW6EA/viewform?embedded=true" width="100%" height="551" onLoad={() => setLoading(false)}>
         </iframe>
       </Dialog>
-      <Button onClick={
-        () => {
+      <button
+        onClick={() => {
           setDisplayForm(true)
           setLoading(true)
-        }
-      } severity='info' label='Book Free Consultation' pt={
-        {
-          'root': {
-            'className': 'bg-theme-blue rounded-lg'
-          }
-        }
-      } />
+        }}
+        className={`${buttonStyles[variant]} text-white font-semibold px-6 py-2.5 rounded-lg`}
+      >
+        {title}
+      </button>
     </div>
   )
 }

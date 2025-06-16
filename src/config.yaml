@@ -9,7 +9,7 @@ metadata:
   title:
     default: Vajpe Tech
     template: '%s — Vajpe Tech'
-  description: 'We are a new age software consultancy firm that specializes in building web and mobile applications.'
+  description: 'Power your trading ideas with reliable automation. We build, test, and deploy your F&O strategies.'
   robots:
     index: true
     follow: true

@@ -3,26 +3,26 @@ export default function AccordionX() {
   return <>
     <div>
       <Accordion multiple>
-        <AccordionTab header="What do we mean by templates?">
+        <AccordionTab header="Do you provide strategy ideas or recommendations?">
           <p>
-            Most software development tasks have a common structure. Templates are blueprints our developers use to build software. They help us deliver projects faster and with fewer errors.
+            No. We do not provide financial advice, tips, or recommendations. You bring the logic — we build, backtest, and deploy it. Your strategy remains confidential and is never reused.
           </p>
         </AccordionTab>
-        <AccordionTab header="Why employee turnover doesn't affect projects?">
+        <AccordionTab header="Is my strategy safe with you? Will you or others be able to see or reuse it?">
           <p>
-            We take care of our people. The implementation of architecture using templates created by our core team is easier on brain. This means our developers are less stressed and more productive.
-          </p>
-        </AccordionTab>
-
-        <AccordionTab header="What does templates contain?">
-          <p>
-            Templates contain the basic structure of the software. They include the architecture, design, and implementation details. This helps our developers stay productive in combination with AI tools.
+            Absolutely safe. All strategies are end-to-end encrypted, both at rest and in execution. Only the assigned engineer and your private container handle your code — and even then, access is locked behind strict controls. We sign NDAs on request.
           </p>
         </AccordionTab>
 
-        <AccordionTab header="How do we ensure quality?">
+        <AccordionTab header="What kind of strategies can you build and deploy?">
           <p>
-            The templates also contain quality assurance guidelines. This ensures that the software is built to the highest standards. We also have a team of quality assurance engineers who review the software before it is delivered to you.
+            We support most F&O strategies — directional, spreads, straddles/strangles, scalping, intraday momentum, and more. You can share your idea in plain English or pseudocode, and we’ll help convert it to Python + deploy it to your broker.
+          </p>
+        </AccordionTab>
+
+        <AccordionTab header="What brokers do you support? Can I use multiple accounts?">
+          <p>
+            We currently support Zerodha, Upstox, XTS and more via broker APIs. HNI plans include support for multiple trading accounts — perfect for managing personal and client capital in parallel.
           </p>
         </AccordionTab>
       </Accordion>
