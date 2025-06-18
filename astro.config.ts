@@ -25,7 +25,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: 'https://vajpe.com',
+  site: 'https://oxialgo.com',
   redirects: {
     '/2024/10/18/why-working-with-asyncio-can-be-tricky-in-python/': {
       status: 302,

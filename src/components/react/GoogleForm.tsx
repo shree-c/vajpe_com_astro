@@ -8,7 +8,7 @@ function GoogleForm({ title, variant = 'primary' }: { title: string, variant: 'p
   const [loading, setLoading] = useState(true)
 
   const buttonStyles = {
-    primary: 'bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg',
+    primary: 'bg-gradient-to-r from-theme-blue to-theme-blue hover:from-theme-blue hover:to-theme-blue shadow-lg',
     gold: 'bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 shadow-lg',
     platinum: 'bg-gradient-to-r from-gray-400 to-gray-500 hover:from-gray-500 hover:to-gray-600 shadow-lg'
   }

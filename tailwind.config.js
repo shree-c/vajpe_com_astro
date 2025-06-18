@@ -12,7 +12,7 @@ export default {
         accent: 'var(--aw-color-accent)',
         default: 'var(--aw-color-text-default)',
         muted: 'var(--aw-color-text-muted)',
-        'theme-blue': '#0045FF',
+        'theme-blue': '#8781ff',
         'muted-theme-blue': 'rgba(48, 53, 255, 0.15)',
       },
       fontFamily: {

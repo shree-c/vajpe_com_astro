@@ -1,20 +1,20 @@
 site:
-  name: 'Vajpe Tech'
-  site: 'https://vajpe.com'
+  name: 'OxiAlgo'
+  site: 'https://oxialgo.com'
   base: '/'
   trailingSlash: false
 
 # Default SEO metadata
 metadata:
   title:
-    default: Vajpe Tech
-    template: '%s — Vajpe Tech'
+    default: OxiAlgo
+    template: '%s — OxiAlgo'
   description: 'Power your trading ideas with reliable automation. We build, test, and deploy your F&O strategies.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Vajpe Tech
+    site_name: OxiAlgo
     images:
       - url: '~/assets/images/banner.png'
         width: 1200

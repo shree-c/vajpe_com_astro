@@ -1,9 +1,10 @@
 ---
-
+import Logo from '~/assets/brand/banner-no-padding.svg';
+import { Image } from 'astro:assets';
 ---
 
-<span class="self-center rtl:ml-0 rtl:mr-2 text-xl font-bold whitespace-nowrap dark:text-white text-theme-blue">
-  <div>
-    <span class="bg-theme-blue px-3 py-2 text-white mr-0.5">V</span>ajpe Tech
+<span class="">
+  <div class="my-1 mr-auto -ml-20 md:-ml-16">
+    <Image src={Logo} alt="OxiAlgo" class={`h-[30px] md:h-[50px]`} />
   </div>
 </span>
